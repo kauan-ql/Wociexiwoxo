@@ -26,5 +26,3 @@ Dark Hub é um painel (GUI) para Roblox focado em **mobile**, com:
 2. Cole o código abaixo
 3. Execute dentro do jogo
 
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kauan-ql/Wociexiwoxo/main/loader.lua"))()
