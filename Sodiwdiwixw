@@ -1,0 +1,36 @@
+-- Dark Hub | Mobile Panel
+-- Feito para Delta / Mobile
+
+local player = game.Players.LocalPlayer
+local TweenService = game:GetService("TweenService")
+
+-- Evitar duplicar
+if player.PlayerGui:FindFirstChild("DarkHub") then
+    player.PlayerGui.DarkHub:Destroy()
+end
+
+-- ScreenGui
+local gui = Instance.new("ScreenGui")
+gui.Name = "DarkHub"
+gui.Parent = player.PlayerGui
+gui.ResetOnSpawn = false
+
+-- Botão flutuante (toggle)
+local toggle = Instance.new("TextButton")
+toggle.Parent = gui
+toggle.Size = UDim2.new(0,50,0,50)
+toggle.Position = UDim2.new(0.85,0,0.6,0)
+toggle.Text = "≡"
+toggle.Font = Enum.Font.GothamBold
+toggle.TextSize = 22
+toggle.TextColor3 = Color3.fromRGB(255,255,255)
+toggle.BackgroundColor3 = Color3.fromRGB(20,20,20)
+toggle.BorderSizePixel = 0
+toggle.Active = true
+toggle.Draggable = true
+Instance.new("UICorner", toggle).CornerRadius = UDim.new(1,0)
+
+-- Painel principal
+local frame = Instance.new("Frame")
+frame.Parent = gui
+frame.Size = UDim2.new(0,240,0
